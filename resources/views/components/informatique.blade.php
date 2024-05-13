@@ -1,0 +1,256 @@
+<li class="nav-item {{setMenuClass('info.habilitations.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('info.habilitations.', 'active')}}">
+              <i class="fas fa-user-lock fa-lg"></i>
+              <p>
+                Habilitations
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item ">
+                <a
+                href="{{route('info.habilitations.detachements.index')}}"
+                class="nav-link {{setMenuClass('info.habilitations.detachements.index', 'active')}}"
+                >
+                 <i class="fas fa-layer-group text-primary"></i>
+                  <p class="text-primary">Détachements</p>
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a
+                href="{{route('info.habilitations.servics.index')}}"
+                class="nav-link {{setMenuClass('info.habilitations.servics.index', 'active')}}"
+                >
+                 <i class="fab fa-servicestack text-primary"></i>
+                  <p class="text-primary">Services</p>
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a
+                href="{{route('info.habilitations.utilisateurs.index')}}"
+                class="nav-link {{setMenuClass('info.habilitations.utilisateurs.index', 'active')}}"
+                >
+                  <i class=" nav-icon fas fa-users-cog text-primary"></i>
+                  <p class="text-primary">Gestion des utilisateurs</p>
+                </a>
+              </li>
+            </ul>
+        </li>
+
+        <li class="nav-item {{setMenuClass('ouv.ouverture.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('ouv.ouverture.', 'active')}}">
+                <i class="fas fa-folder-open fa-lg"></i>
+                <p>
+                Ouverture
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('ouv.ouverture.dossiers.index')}}"
+                        class="nav-link {{setMenuClass('ouv.ouverture.dossiers.index', 'active')}}">
+                    <i class="nav-icon fas fa-folder-plus text-primary"></i>
+                    <p class="text-primary">Gestion des  dossiers</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('ouv.ouverture.cliens.index')}}"
+                        class="nav-link {{setMenuClass('ouv.ouverture.cliens.index', 'active')}}">
+                    <i class="nav-icon fas fa-edit text-primary"></i>
+                    <p class="text-primary">Table des clients</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item {{setMenuClass('ema.cotation.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('ema.cotation.', 'active')}}">
+                <i class="fab fa-creative-commons-by fa-lg fa-2x"></i>
+                <p>
+                Cotations
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('ema.cotation.cotations.index')}}"
+                        class="nav-link {{setMenuClass('ema.cotation.cotations.index', 'active')}}">
+                    <i class="fas fa-external-link-alt text-primary"></i>
+                    <p class="text-primary">Cotation & modification</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('ema.cotation.cotannuls.index')}}"
+                        class="nav-link {{setMenuClass('ema.cotation.cotannuls.index', 'active')}}">
+                    <i class="fas fa-ban text-primary"></i>
+                    <p class="text-primary">Annulation</p>
+                    </a>
+                </li>
+              </ul>
+           </li>
+
+           <li class="nav-item {{setMenuClass('doc.documentation.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('doc.documentation.', 'active')}}">
+                <i class="fas fa-book fa-lg"></i>
+                <p>
+                Documentation
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+             
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('doc.documentation.rfcvs.index')}}"
+                        class="nav-link {{setMenuClass('doc.documentation.rfcvs.index', 'active')}}">
+                    <i class="fas fa-external-link-alt text-primary"></i>
+                    <p class="text-primary">RFCV - FDI</p>
+                    </a>
+                </li>
+                
+              </ul>
+           </li>
+    
+           <li class="nav-item {{setMenuClass('ema.validation.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('ema.validation.', 'active')}}">
+               <i class="fas fa-check-double fa-lg"></i>
+                <p>
+                Validation
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('ema.validation.valids.index')}}"
+                        class="nav-link {{setMenuClass('ema.validation.valids.index', 'active')}}">
+                    <i class="fas fa-check text-primary"></i>
+                    <p class="text-primary">Validation & modification</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('ema.validation.anvalids.annul')}}"
+                        class="nav-link {{setMenuClass('ema.validation.anvalids.annul', 'active')}}">
+                   <i class="fas fa-ban text-primary"></i>
+                    <p class="text-primary">Annulation</p>
+                    </a>
+                </li>
+                
+             </ul>
+         </li>
+
+           <li class="nav-item {{setMenuClass('liv.livraison.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('liv.livraison.', 'active')}}">
+               <i class="fas fa-truck fa-lg"></i>
+                <p>
+                Livraison
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('liv.livraison.bordereaux.index')}}"
+                        class="nav-link {{setMenuClass('liv.livraison.bordereaux.index', 'active')}}">
+                    <i class="fas fa-dolly-flatbed text-primary"></i>
+                    <p class="text-primary">Livraison & modification</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('liv.livraison.ordres.index')}}"
+                        class="nav-link {{setMenuClass('liv.livraison.ordres.index', 'active')}}">
+                   <i class="fab fa-first-order text-primary"></i>
+                    <p class="text-primary">Ordre -Bordereau</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('liv.livraison.conteneurs.index')}}"
+                        class="nav-link {{setMenuClass('liv.livraison.conteneurs.index', 'active')}}">
+                    <i class="fas fa-boxes text-primary"></i>
+                    <p class="text-primary">Gestion des conteneurs</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('liv.livraison.transporteurs.index')}}"
+                        class="nav-link {{setMenuClass('liv.livraison.transporteurs.index', 'active')}}">
+                    
+                    <i class="fas fa-dolly text-primary"></i>
+                    <p class="text-primary">Table des transporteurs</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('liv.livraison.compagnies.index')}}"
+                        class="nav-link {{setMenuClass('liv.livraison.compagnies.index', 'active')}}">
+                    <i class="far fa-building text-primary"></i>
+                    <p class="text-primary">Table des compagnies</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('acconier.index')}}"
+                        class="nav-link {{setMenuClass('acconier.index', 'active')}}">
+                    <i class="fas fa-warehouse text-primary"></i>
+                    <p class="text-primary">Table des acconiers</p>
+                    </a>
+                </li>
+              </ul>
+           </li>
+           
+           <li class="nav-item {{setMenuClass('aer.aerien.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('aer.aerien.', 'active')}}">
+               <i class="fas fa-plane fa-lg"></i>
+                <p>
+                Aérien
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('aer.aerien.saisies.index')}}"
+                        class="nav-link {{setMenuClass('aer.aerien.saisies.index', 'active')}}">
+                    <i class="fas fa-pen text-primary"></i>
+                    <p class="text-primary">Saisie et édition</p>
+                    </a>
+                </li>
+                
+              </ul>
+           </li>
+
+           <li class="nav-item {{setMenuClass('opera.operationnel.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('opera.operationnel.', 'active')}}">
+                <i class="fas fa-briefcase fa-lg"></i>
+                <p>
+                Opérationnel
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('opera.operationnel.passages.index')}}"
+                        class="nav-link {{setMenuClass('opera.operationnel.passages.index', 'active')}}">
+                    <i class="fas fa-calendar-check text-primary"></i>
+                    <p class="text-primary">Procédure de passage</p>
+                    </a>
+                </li>
+            </ul>
+           </li>
+           
+           <li class="nav-item {{setMenuClass('info.maintenance.', 'menu-open')}}">
+            <a href="#" class="nav-link {{setMenuClass('info.maintenance.', 'active')}}">
+                
+                <i class="fas fa-exclamation-triangle fa-lg text-orange"></i>
+                <p class="text-orange">
+                    Maintenance
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{route('info.maintenance.outils.index')}}"
+                        class="nav-link {{setMenuClass('info.maintenance.outils.index', 'active')}}">
+                        <i class="fas fa-tools text-success"></i>
+                        <p class="text-success">Outils</p>
+                    </a>
+                </li>
+            </ul>
+           </li>
+            
+           
